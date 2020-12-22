@@ -9,26 +9,26 @@ public class calculator {
 		float a,b,y;
 		char oper;
 		Scanner reader = new Scanner(System.in);
-        System.out.print("Enter first number : ");
-        a = reader.nextFloat();
-        System.out.print("Enter second number: ");
-        b = reader.nextFloat();
-        System.out.print("Enter operation: ");
-        oper = reader.next().charAt(0);
-        
-        y = 0;
-        if(oper == '+'){
-        	y = a +b;
-        }else if(oper == '-') {
-        	y = a - b;
-        }else if(oper == '*') {
-        	y = a * b;
-        }else if(oper == '/') {
-        	y = a / b;
-        }else if(oper == '%') {
-        	y = a % b;
-        }
-        System.out.println("y = " + y);
+		System.out.print("Enter first number : ");
+		a = reader.nextFloat();
+		System.out.print("Enter second number: ");
+		b = reader.nextFloat();
+		System.out.print("Enter operation: ");
+		oper = reader.next().charAt(0);
+
+		y = 0;
+		if(oper == '+'){
+			y = a +b;
+		}else if(oper == '-') {
+			y = a - b;
+		}else if(oper == '*') {
+			y = a * b;
+		}else if(oper == '/') {
+			y = a / b;
+		}else if(oper == '%') {
+			y = a % b;
+		}
+		System.out.println("y = " + y);
 	}
 
 }
